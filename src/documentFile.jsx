@@ -239,7 +239,7 @@ const generateDoc = () => {
 						frame: {
 							position: {
 								x: 0,
-								y: 170,
+								y: 180,
 							},
 							width: 8000,
 							height: 1000,
@@ -320,6 +320,348 @@ const generateDoc = () => {
                             }),
 						],
 					}),
+                    new Paragraph({
+						alignment: AlignmentType.CENTER,
+						frame: {
+							position: {
+								x: 8110,
+								y: 180,
+							},
+							width: 1000,
+							height: 400,
+							anchor: {
+								horizontal: FrameAnchorType.MARGIN,
+								vertical: FrameAnchorType.MARGIN,
+							},
+							alignment: {
+								x: HorizontalPositionAlign.CENTER,
+								y: VerticalPositionAlign.TOP,
+							},
+						},
+                        border: {
+							top: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							bottom: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							left: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							right: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+						},
+                        children: [
+                            new TextRun({
+                                text: "Sheet No.",
+                                allCaps: true,
+                                size: 10,
+                            }),
+                            new TextRun({
+                                text: "1",
+                                break: 1,
+                                size: 16,
+                            })
+                        ]
+                    }),
+                    new Paragraph({
+						alignment: AlignmentType.CENTER,
+						frame: {
+							position: {
+								x: 9220,
+								y: 180,
+							},
+							width: 1000,
+							height: 400,
+							anchor: {
+								horizontal: FrameAnchorType.MARGIN,
+								vertical: FrameAnchorType.MARGIN,
+							},
+							alignment: {
+								x: HorizontalPositionAlign.CENTER,
+								y: VerticalPositionAlign.TOP,
+							},
+						},
+                        border: {
+							top: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							bottom: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							left: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							right: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+						},
+                        children: [
+                            new TextRun({
+                                text: "No. of Sheets",
+                                allCaps: true,
+                                size: 10,
+                            }),
+                            new TextRun({
+                                text: "1",
+                                break: 1,
+                                size: 16,
+                            }),
+                        ]
+                    }),
+                    new Paragraph({
+						alignment: AlignmentType.CENTER,
+						frame: {
+							position: {
+								x: 10325,
+								y: 180,
+							},
+							width: 1200,
+							height: 400,
+							anchor: {
+								horizontal: FrameAnchorType.MARGIN,
+								vertical: FrameAnchorType.MARGIN,
+							},
+							alignment: {
+								x: HorizontalPositionAlign.CENTER,
+								y: VerticalPositionAlign.TOP,
+							},
+						},
+                        border: {
+							top: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							bottom: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							left: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							right: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+						},
+                        children: [
+                            new TextRun({
+                                text: "5. Requisition Date",
+                                allCaps: true,
+                                size: 10,
+                            }),
+                            new TextRun({
+                                text: "01/01/2021",
+                                break: 1,
+                                size: 16,
+                            }),
+                        ]
+                    }),
+                    new Paragraph({
+						alignment: AlignmentType.LEFT,
+						frame: {
+							position: {
+								x: 11635,
+								y: 180,
+							},
+							width: 2175,
+							height: 400,
+							anchor: {
+								horizontal: FrameAnchorType.MARGIN,
+								vertical: FrameAnchorType.MARGIN,
+							},
+							alignment: {
+								x: HorizontalPositionAlign.CENTER,
+								y: VerticalPositionAlign.TOP,
+							},
+						},
+                        border: {
+							top: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							bottom: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							left: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							right: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+						},
+                        children: [
+                            new TextRun({
+                                text: "6. Requisition No",
+                                allCaps: true,
+                                size: 10,
+                            }),
+                            new TextRun({
+                                text: "N44466-0000",
+                                break: 1,
+                                size: 16,
+                            }),
+                        ]
+                    }),
+                    new Paragraph({
+						alignment: AlignmentType.LEFT,
+						frame: {
+							position: {
+								x: 8110,
+								y: 570,
+							},
+							width: 3415,
+							height: 610,
+							anchor: {
+								horizontal: FrameAnchorType.MARGIN,
+								vertical: FrameAnchorType.MARGIN,
+							},
+							alignment: {
+								x: HorizontalPositionAlign.CENTER,
+								y: VerticalPositionAlign.TOP,
+							},
+						},
+                        border: {
+							top: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							bottom: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							left: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							right: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+						},
+                        children: [
+                            new TextRun({
+                                text: "7. Date/Material Required (YYMMDD)",
+                                allCaps: true,
+                                size: 10,
+                            }),
+                            new TextRun({
+                                text: "\t210101",
+                                break: 2,
+                                size: 18,
+                            }),
+                        ]
+                    }),
+                    new Paragraph({
+						alignment: AlignmentType.LEFT,
+						frame: {
+							position: {
+								x: 11635,
+								y: 570,
+							},
+							width: 2175,
+							height: 610,
+							anchor: {
+								horizontal: FrameAnchorType.MARGIN,
+								vertical: FrameAnchorType.MARGIN,
+							},
+							alignment: {
+								x: HorizontalPositionAlign.CENTER,
+								y: VerticalPositionAlign.TOP,
+							},
+						},
+                        border: {
+							top: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							bottom: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							left: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							right: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+						},
+                        children: [
+                            new TextRun({
+                                text: "8. Priority",
+                                allCaps: true,
+                                size: 10,
+                            }),
+                            new TextRun({
+                                text: "Yes",
+                                break: 2,
+                                size: 18,
+                            }),
+                        ]
+                    }),
 				],
 			},
 		],
