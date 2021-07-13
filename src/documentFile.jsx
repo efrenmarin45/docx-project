@@ -54,6 +54,7 @@ const generateDoc = () => {
 					},
 				},
 				children: [
+                    //Header and Title
 					new Paragraph({
 						alignment: AlignmentType.CENTER,
 						frame: {
@@ -105,6 +106,7 @@ const generateDoc = () => {
 							}),
 						],
 					}),
+                    //OMB Number
 					new Paragraph({
 						alignment: AlignmentType.CENTER,
 						frame: {
@@ -157,6 +159,7 @@ const generateDoc = () => {
 							}),
 						],
 					}),
+                    //Disclosure Main Text
 					new Paragraph({
 						alignment: AlignmentType.LEFT,
 						frame: {
@@ -208,6 +211,7 @@ const generateDoc = () => {
 							}),
 						],
 					}),
+                    //Disclosure Sub Text
                     new Paragraph({
                         alignment: AlignmentType.CENTER,
                         frame: {
@@ -234,6 +238,7 @@ const generateDoc = () => {
                             })
                         ]
                     }),
+                    //FROM Row #1 Address Header
                     new Paragraph({
 						alignment: AlignmentType.LEFT,
 						frame: {
@@ -241,7 +246,7 @@ const generateDoc = () => {
 								x: 0,
 								y: 180,
 							},
-							width: 8000,
+							width: 8010,
 							height: 1000,
 							anchor: {
 								horizontal: FrameAnchorType.MARGIN,
@@ -285,12 +290,13 @@ const generateDoc = () => {
 							}),
 						],
 					}),
+                    //FROM Row Address
                     new Paragraph({
 						alignment: AlignmentType.LEFT,
 						frame: {
 							position: {
 								x: 0,
-								y: 350,
+								y: 450,
 							},
 							width: 5500,
 							height: 1000,
@@ -320,6 +326,7 @@ const generateDoc = () => {
                             }),
 						],
 					}),
+                    //FROM Row Cell - Sheet No.
                     new Paragraph({
 						alignment: AlignmentType.CENTER,
 						frame: {
@@ -377,6 +384,7 @@ const generateDoc = () => {
                             })
                         ]
                     }),
+                    //FROM Row Cell - No. of Sheets
                     new Paragraph({
 						alignment: AlignmentType.CENTER,
 						frame: {
@@ -434,6 +442,7 @@ const generateDoc = () => {
                             }),
                         ]
                     }),
+                    //FROM Row Cell - #5 Requisition Date
                     new Paragraph({
 						alignment: AlignmentType.CENTER,
 						frame: {
@@ -491,14 +500,15 @@ const generateDoc = () => {
                             }),
                         ]
                     }),
+                    //FROM Row Cell - #6 Requisition Number
                     new Paragraph({
 						alignment: AlignmentType.LEFT,
 						frame: {
 							position: {
-								x: 11635,
+								x: 11630,
 								y: 180,
 							},
-							width: 2175,
+							width: 2180,
 							height: 400,
 							anchor: {
 								horizontal: FrameAnchorType.MARGIN,
@@ -548,12 +558,13 @@ const generateDoc = () => {
                             }),
                         ]
                     }),
+                    //FROM Row Cell - #7 Date/Material Required
                     new Paragraph({
 						alignment: AlignmentType.LEFT,
 						frame: {
 							position: {
 								x: 8110,
-								y: 570,
+								y: 565,
 							},
 							width: 3415,
 							height: 610,
@@ -605,12 +616,13 @@ const generateDoc = () => {
                             }),
                         ]
                     }),
+                    //FROM Row Cell - #8 Priority
                     new Paragraph({
 						alignment: AlignmentType.LEFT,
 						frame: {
 							position: {
 								x: 11635,
-								y: 570,
+								y: 565,
 							},
 							width: 2175,
 							height: 610,
@@ -662,6 +674,284 @@ const generateDoc = () => {
                             }),
                         ]
                     }),
+                    //TO Row #2 Address Header
+                    new Paragraph({
+						alignment: AlignmentType.LEFT,
+						frame: {
+							position: {
+								x: 0,
+								y: 1160,
+							},
+							width: 8010,
+							height: 1000,
+							anchor: {
+								horizontal: FrameAnchorType.MARGIN,
+								vertical: FrameAnchorType.MARGIN,
+							},
+							alignment: {
+								x: HorizontalPositionAlign.CENTER,
+								y: VerticalPositionAlign.TOP,
+							},
+						},
+                        border: {
+							top: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							bottom: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							left: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							right: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+						},
+                        children: [
+                            new TextRun({
+                                text: "2. TO: (IncludeZIPCode)",
+                                size: 10,
+                            }),
+                        ]
+                    }),
+                    //TO Row Address
+                    new Paragraph({
+						alignment: AlignmentType.LEFT,
+						frame: {
+							position: {
+								x: 0,
+								y: 1400,
+							},
+							width: 5500,
+							height: 1000,
+							anchor: {
+								horizontal: FrameAnchorType.MARGIN,
+								vertical: FrameAnchorType.MARGIN,
+							},
+							alignment: {
+								x: HorizontalPositionAlign.CENTER,
+								y: VerticalPositionAlign.TOP,
+							},
+						},
+                        children: [
+							new TextRun({
+								text: "TRIDENT REFIT FACILITY, CODE 532",
+                                size: 18,
+							}),
+                            new TextRun({
+                                text: "BLDG 4027",
+                                size: 18,
+                                break: 1,
+                            }),
+                            new TextRun({
+                                text: "KINGS BAY, GA 31547-6000",
+                                size: 18,
+                                break: 1,
+                            }),
+						],
+					}),
+                    //TO Row Cell - #9 Authority or Purpose
+                    new Paragraph({
+						alignment: AlignmentType.LEFT,
+						frame: {
+							position: {
+								x: 8110,
+								y: 1165,
+							},
+							width: 5700,
+							height: 515,
+							anchor: {
+								horizontal: FrameAnchorType.MARGIN,
+								vertical: FrameAnchorType.MARGIN,
+							},
+							alignment: {
+								x: HorizontalPositionAlign.CENTER,
+								y: VerticalPositionAlign.TOP,
+							},
+						},
+                        border: {
+							top: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							bottom: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							left: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							right: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+						},
+                        children: [
+                            new TextRun({
+                                text: "9. Authority or Purpose",
+                                allCaps: true,
+                                size: 10,
+                            }),
+                            new TextRun({
+                                text: "TyKit Program",
+                                allCaps: true,
+                                break: 1,
+                                size: 18,
+                            }),
+                        ]
+                    }),
+                    //TO Row Cell - #10 Signature
+                    new Paragraph({
+						alignment: AlignmentType.LEFT,
+						frame: {
+							position: {
+								x: 8110,
+								y: 1660,
+							},
+							width: 2800,
+							height: 500,
+							anchor: {
+								horizontal: FrameAnchorType.MARGIN,
+								vertical: FrameAnchorType.MARGIN,
+							},
+							alignment: {
+								x: HorizontalPositionAlign.CENTER,
+								y: VerticalPositionAlign.TOP,
+							},
+						},
+                        border: {
+							top: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							bottom: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							left: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							right: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+						},
+                        children: [
+                            new TextRun({
+                                text: "10. Signature",
+                                allCaps: true,
+                                size: 10,
+                            }),
+                            new TextRun({
+                                text: "Bob Builder",
+                                allCaps: true,
+                                break: 1,
+                                size: 18,
+                            }),
+                        ]
+                    }),
+                    //TO Row Cell - 11a. Voucher Number and Date (YYMMDD)
+                    new Paragraph({
+						alignment: AlignmentType.LEFT,
+						frame: {
+							position: {
+								x: 11010,
+								y: 1660,
+							},
+							width: 2800,
+							height: 500,
+							anchor: {
+								horizontal: FrameAnchorType.MARGIN,
+								vertical: FrameAnchorType.MARGIN,
+							},
+							alignment: {
+								x: HorizontalPositionAlign.CENTER,
+								y: VerticalPositionAlign.TOP,
+							},
+						},
+                        border: {
+							top: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							bottom: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							left: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							right: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+						},
+                        children: [
+                            new TextRun({
+                                text: "11a. Voucher Number & Date (YYMMDD)",
+                                allCaps: true,
+                                size: 10,
+                            }),
+                            new TextRun({
+                                text: "D123456 210101",
+                                allCaps: true,
+                                break: 1,
+                                size: 18,
+                            }),
+                        ]
+                    }),
+                    //SHIP TO Row #3 Address Header
+
+                    //SHIP TO Row Address
+
+                    //SHIP TO Row Cell - #12 Date Shipped (YYMMDD)
+
+                    //SHIP TO Row Cell - 11b EMPTY
+
+                    //SHIP TO Row Cell - #13 Mode of Shipment
+
+                    //SHIP TO Row Cell - #14 Bill of Landing Number
+
+                    //SHIP TO Row Cell - #15 Air Movement Designator or Port Reference Number
 				],
 			},
 		],
