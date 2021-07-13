@@ -8,8 +8,39 @@ import {
 	VerticalPositionAlign,
 	PageOrientation,
 	AlignmentType,
+    Table,
+    TableCell, TableRow, WidthType,
 } from "docx";
 import { saveAs } from "file-saver";
+
+
+const table = new Table({
+    columnWidths: [12500],
+    rows: [
+        new TableRow({
+            children: [
+                new TableCell({
+                    width: {
+                        size: 12500,
+                        type: WidthType.DXA,
+                    },
+                    children: [
+                        new Paragraph({
+                            children: [
+                                new TextRun({
+                                    text: "1. FROM (IncludeZipCode)",
+                                    size: 6,
+                                }),
+                            ]
+                        }),
+                    ],
+                }),
+            ]
+        })
+    ]
+})
+
+
 
 const generateDoc = () => {
 	const doc = new Document({
@@ -202,10 +233,99 @@ const generateDoc = () => {
                                 allCaps: true,
                             })
                         ]
-                    })
+                    }),
+                    new Paragraph({
+						alignment: AlignmentType.LEFT,
+						frame: {
+							position: {
+								x: 0,
+								y: 170,
+							},
+							width: 8000,
+							height: 1000,
+							anchor: {
+								horizontal: FrameAnchorType.MARGIN,
+								vertical: FrameAnchorType.MARGIN,
+							},
+							alignment: {
+								x: HorizontalPositionAlign.CENTER,
+								y: VerticalPositionAlign.TOP,
+							},
+						},
+						border: {
+							top: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							bottom: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							left: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							right: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+						},
+						children: [
+							new TextRun({
+								text: "1. FROM (IncludeZIPCode)",
+                                size: 10,
+							}),
+						],
+					}),
+                    new Paragraph({
+						alignment: AlignmentType.LEFT,
+						frame: {
+							position: {
+								x: 0,
+								y: 350,
+							},
+							width: 5500,
+							height: 1000,
+							anchor: {
+								horizontal: FrameAnchorType.MARGIN,
+								vertical: FrameAnchorType.MARGIN,
+							},
+							alignment: {
+								x: HorizontalPositionAlign.CENTER,
+								y: VerticalPositionAlign.TOP,
+							},
+						},
+                        children: [
+							new TextRun({
+								text: "TRIDENT REFIT FACILITY, CODE 432",
+                                size: 18,
+							}),
+                            new TextRun({
+                                text: "POC: LEE SAVELSON, PHONE (912) 573-3881/ FAX (912) 573-3709",
+                                size: 18,
+                                break: 1,
+                            }),
+                            new TextRun({
+                                text: "KINGS BAY GA 31547-6000",
+                                size: 18,
+                                break: 1,
+                            }),
+						],
+					}),
 				],
 			},
 		],
+        children: [
+            table,
+        ]
 	});
 
 	Packer.toBlob(doc).then((blob) => {
