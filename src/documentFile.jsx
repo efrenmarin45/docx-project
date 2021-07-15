@@ -14,34 +14,6 @@ import {
 import { saveAs } from "file-saver";
 
 
-const table = new Table({
-    columnWidths: [12500],
-    rows: [
-        new TableRow({
-            children: [
-                new TableCell({
-                    width: {
-                        size: 12500,
-                        type: WidthType.DXA,
-                    },
-                    children: [
-                        new Paragraph({
-                            children: [
-                                new TextRun({
-                                    text: "1. FROM (IncludeZipCode)",
-                                    size: 6,
-                                }),
-                            ]
-                        }),
-                    ],
-                }),
-            ]
-        })
-    ]
-})
-
-
-
 const generateDoc = () => {
 	const doc = new Document({
 		sections: [
@@ -1946,7 +1918,7 @@ const generateDoc = () => {
                             new TextRun({
                                 text: "Federal Stock Number, Description, and Coding of Material and/or Services (b)",
                                 allCaps: true,
-                                size: 10,
+                                size: 14,
                             }),
                         ]
                     }),
@@ -2322,32 +2294,958 @@ const generateDoc = () => {
                         ]
                     }),
                     //Item Data Cell - Numbered Item
-
+					new Paragraph({
+						alignment: AlignmentType.CENTER,
+						frame: {
+							position: {
+								x: 0,
+								y: 4590,
+							},
+							width: 300,
+							height: 2550,
+							anchor: {
+								horizontal: FrameAnchorType.MARGIN,
+								vertical: FrameAnchorType.MARGIN,
+							},
+							alignment: {
+								x: HorizontalPositionAlign.CENTER,
+								y: VerticalPositionAlign.TOP,
+							},
+						},
+                        border: {
+							top: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							bottom: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							left: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							right: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+						},
+                        children: [
+                            new TextRun({
+                                text: "1",
+                                size: 14,
+                            }),
+							new TextRun({
+                                text: "2",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "3",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "4",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "5",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "6",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "7",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "8",
+                                size: 14,
+								break: 2,
+                            }),
+                        ]
+                    }),
                     //Item Data Cell - Federal Stock Number, Description, and Coding of Material and/or Services
-
+					new Paragraph({
+						alignment: AlignmentType.CENTER,
+						frame: {
+							position: {
+								x: 405,
+								y: 4590,
+							},
+							width: 7200,
+							height: 2550,
+							anchor: {
+								horizontal: FrameAnchorType.MARGIN,
+								vertical: FrameAnchorType.MARGIN,
+							},
+							alignment: {
+								x: HorizontalPositionAlign.CENTER,
+								y: VerticalPositionAlign.TOP,
+							},
+						},
+                        border: {
+							top: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							bottom: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							left: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							right: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+						},
+                        children: [
+                            new TextRun({
+                                text: "736483 Test Equipment Batch 743",
+                                size: 14,
+                            }),
+							new TextRun({
+                                text: "N/A",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "N/A",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "N/A",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "N/A",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "N/A",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "N/A",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "N/A",
+                                size: 14,
+								break: 2,
+                            }),
+                        ]
+                    }),
                     //Item Data Cell - Unit of Issue
-
+					new Paragraph({
+						alignment: AlignmentType.CENTER,
+						frame: {
+							position: {
+								x: 7705,
+								y: 4590,
+							},
+							width: 450,
+							height: 2550,
+							anchor: {
+								horizontal: FrameAnchorType.MARGIN,
+								vertical: FrameAnchorType.MARGIN,
+							},
+							alignment: {
+								x: HorizontalPositionAlign.CENTER,
+								y: VerticalPositionAlign.TOP,
+							},
+						},
+                        border: {
+							top: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							bottom: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							left: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							right: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+						},
+                        children: [
+                            new TextRun({
+                                text: "ABC",
+                                size: 14,
+                            }),
+							new TextRun({
+                                text: "---",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "---",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "---",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "---",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "---",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "---",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "---",
+                                size: 14,
+								break: 2,
+                            }),
+                        ]
+                    }),
                     //Item Data Cell - Quantity Requested
-
+					new Paragraph({
+						alignment: AlignmentType.CENTER,
+						frame: {
+							position: {
+								x: 8255,
+								y: 4590,
+							},
+							width: 705,
+							height: 2550,
+							anchor: {
+								horizontal: FrameAnchorType.MARGIN,
+								vertical: FrameAnchorType.MARGIN,
+							},
+							alignment: {
+								x: HorizontalPositionAlign.CENTER,
+								y: VerticalPositionAlign.TOP,
+							},
+						},
+                        border: {
+							top: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							bottom: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							left: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							right: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+						},
+                        children: [
+                            new TextRun({
+                                text: "4",
+                                size: 14,
+                            }),
+							new TextRun({
+                                text: "---",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "---",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "---",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "---",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "---",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "---",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "---",
+                                size: 14,
+								break: 2,
+                            }),
+                        ]
+                    }),
                     //Item Data Cell - Supply Action
-
+					new Paragraph({
+						alignment: AlignmentType.CENTER,
+						frame: {
+							position: {
+								x: 9065,
+								y: 4590,
+							},
+							width: 750,
+							height: 2550,
+							anchor: {
+								horizontal: FrameAnchorType.MARGIN,
+								vertical: FrameAnchorType.MARGIN,
+							},
+							alignment: {
+								x: HorizontalPositionAlign.CENTER,
+								y: VerticalPositionAlign.TOP,
+							},
+						},
+                        border: {
+							top: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							bottom: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							left: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							right: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+						},
+                        children: [
+                            new TextRun({
+                                text: "XYZ",
+                                size: 14,
+                            }),
+							new TextRun({
+                                text: "---",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "---",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "---",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "---",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "---",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "---",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "---",
+                                size: 14,
+								break: 2,
+                            }),
+                        ]
+                    }),
                     //Item Data Cell - Type Container
-
+					new Paragraph({
+						alignment: AlignmentType.CENTER,
+						frame: {
+							position: {
+								x: 9920,
+								y: 4590,
+							},
+							width: 800,
+							height: 2550,
+							anchor: {
+								horizontal: FrameAnchorType.MARGIN,
+								vertical: FrameAnchorType.MARGIN,
+							},
+							alignment: {
+								x: HorizontalPositionAlign.CENTER,
+								y: VerticalPositionAlign.TOP,
+							},
+						},
+                        border: {
+							top: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							bottom: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							left: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							right: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+						},
+                        children: [
+                            new TextRun({
+                                text: "987A",
+                                size: 14,
+                            }),
+							new TextRun({
+                                text: "---",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "---",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "---",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "---",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "---",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "---",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "---",
+                                size: 14,
+								break: 2,
+                            }),
+                        ]
+                    }),
                     //Item Data Cell - Containers Nos. 
-
+					new Paragraph({
+						alignment: AlignmentType.CENTER,
+						frame: {
+							position: {
+								x: 10820,
+								y: 4590,
+							},
+							width: 800,
+							height: 2550,
+							anchor: {
+								horizontal: FrameAnchorType.MARGIN,
+								vertical: FrameAnchorType.MARGIN,
+							},
+							alignment: {
+								x: HorizontalPositionAlign.CENTER,
+								y: VerticalPositionAlign.TOP,
+							},
+						},
+                        border: {
+							top: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							bottom: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							left: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							right: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+						},
+                        children: [
+                            new TextRun({
+                                text: "7364",
+                                size: 14,
+                            }),
+							new TextRun({
+                                text: "---",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "---",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "---",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "---",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "---",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "---",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "---",
+                                size: 14,
+								break: 2,
+                            }),
+                        ]
+                    }),
                     //Item Data Cell - Unit Price
-
+					new Paragraph({
+						alignment: AlignmentType.CENTER,
+						frame: {
+							position: {
+								x: 11715,
+								y: 4590,
+							},
+							width: 1000,
+							height: 2550,
+							anchor: {
+								horizontal: FrameAnchorType.MARGIN,
+								vertical: FrameAnchorType.MARGIN,
+							},
+							alignment: {
+								x: HorizontalPositionAlign.CENTER,
+								y: VerticalPositionAlign.TOP,
+							},
+						},
+                        border: {
+							top: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							bottom: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							left: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							right: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+						},
+                        children: [
+                            new TextRun({
+                                text: "$1,000.00",
+                                size: 14,
+                            }),
+							new TextRun({
+                                text: "---",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "---",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "---",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "---",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "---",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "---",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "---",
+                                size: 14,
+								break: 2,
+                            }),
+                        ]
+                    }),
                     //Item Data Cell - Total Cost
-
+					new Paragraph({
+						alignment: AlignmentType.CENTER,
+						frame: {
+							position: {
+								x: 12810,
+								y: 4590,
+							},
+							width: 1000,
+							height: 2550,
+							anchor: {
+								horizontal: FrameAnchorType.MARGIN,
+								vertical: FrameAnchorType.MARGIN,
+							},
+							alignment: {
+								x: HorizontalPositionAlign.CENTER,
+								y: VerticalPositionAlign.TOP,
+							},
+						},
+                        border: {
+							top: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							bottom: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							left: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							right: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+						},
+                        children: [
+                            new TextRun({
+                                text: "$4,000.00",
+                                size: 14,
+                            }),
+							new TextRun({
+                                text: "---",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "---",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "---",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "---",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "---",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "---",
+                                size: 14,
+								break: 2,
+                            }),
+							new TextRun({
+                                text: "---",
+                                size: 14,
+								break: 2,
+                            }),
+                        ]
+                    }),
                     //Break Row Cell - #16 Transportation Via Mats or Msts Chargeable to: 
-
+					new Paragraph({
+						alignment: AlignmentType.LEFT,
+						frame: {
+							position: {
+								x: 0,
+								y: 7120,
+							},
+							width: 8155,
+							height: 50,
+							anchor: {
+								horizontal: FrameAnchorType.MARGIN,
+								vertical: FrameAnchorType.MARGIN,
+							},
+							alignment: {
+								x: HorizontalPositionAlign.CENTER,
+								y: VerticalPositionAlign.TOP,
+							},
+						},
+                        border: {
+							top: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							bottom: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							left: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							right: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+						},
+                        children: [
+                            new TextRun({
+                                text: "#16 Transportation Via Mats or Msts Chargeable to: ",
+                                size: 10,
+                            }),
+							new TextRun({
+								text: "NLAF",
+								size: 10,
+								bold: true,
+							})
+                        ]
+                    }),
                     //Break Row Cell - #17 Special Handling
+					new Paragraph({
+						alignment: AlignmentType.LEFT,
+						frame: {
+							position: {
+								x: 8260,
+								y: 7120,
+							},
+							width: 5550,
+							height: 50,
+							anchor: {
+								horizontal: FrameAnchorType.MARGIN,
+								vertical: FrameAnchorType.MARGIN,
+							},
+							alignment: {
+								x: HorizontalPositionAlign.CENTER,
+								y: VerticalPositionAlign.TOP,
+							},
+						},
+                        border: {
+							top: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							bottom: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							left: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							right: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+						},
+                        children: [
+                            new TextRun({
+                                text: "#17 Special Handling: ",
+                                size: 10,
+                            }),
+							new TextRun({
+								text: "N/A",
+								size: 10,
+								bold: true,
+							})
+                        ]
+                    }),
+					//Final Row Cell - #18 Recapitulation of Shipment
+
+					//Final Row Cell - Issued By
+
+					//Final Row Cell - Checked By
+
+					//Final Row Cell - Packed
+
+					//Final Row Header Cell - Total Containers
+
+					//Final Row Column Cells - Total Containers
+
+					//Final Row Header Cell - Type Containers
+
+					//Final Row Column Cells - Type Containers
+
+					//Final Row Header Cell - Description
+
+					//Final Row Column Cells - Description
+
+					//Final Row Header Cell - Total Weight
+
+					//Final Row Column Cells - Total Weight
+
+					//Final Row Header Cell - Total Cube
+
+					//Final Row Column Cells - Total Cube
+
+					//Final Row Break - #19 Receipt
+
+					//Final Section Row Alpha - Containers Received Except as Noted
+
+					//Final Section Row Alpha - Date
+
+					//Final Section Row Alpha - By
+
+					//Final Section Row Alpha - Sheet Total
+
+					//Final Section Row Bravo - Quantities Received Except as Noted
+
+					//Final Section Row Bravo - Date
+
+					//Final Section Row Bravo - By
+
+					//Final Section Row Bravo - Grand Total
+
+					//Final Section Row Charlie - Posted
+
+					//Final Section Row Charlie - Date
+
+					//Final Section Row Charlie - By
+
+					//Final Section Row Charlie - #20 Receivers Voucher No.
 				],
 			},
 		],
-        children: [
-            table,
-        ]
 	});
 
 	Packer.toBlob(doc).then((blob) => {
