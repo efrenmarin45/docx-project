@@ -1634,7 +1634,7 @@ const generateDoc = () => {
 								x: 9215,
 								y: 3470,
 							},
-							width: 1520,
+							width: 1505,
 							height: 650,
 							anchor: {
 								horizontal: FrameAnchorType.MARGIN,
@@ -1684,10 +1684,10 @@ const generateDoc = () => {
 						alignment: AlignmentType.CENTER,
 						frame: {
 							position: {
-								x: 10845,
+								x: 10825,
 								y: 3470,
 							},
-							width: 550,
+							width: 570,
 							height: 650,
 							anchor: {
 								horizontal: FrameAnchorType.MARGIN,
@@ -1845,23 +1845,482 @@ const generateDoc = () => {
                         ]
                     }),
                     //Item Header Row Cell - Item No. (a)
-
+					new Paragraph({
+						alignment: AlignmentType.CENTER,
+						frame: {
+							position: {
+								x: 0,
+								y: 4110,
+							},
+							width: 300,
+							height: 500,
+							anchor: {
+								horizontal: FrameAnchorType.MARGIN,
+								vertical: FrameAnchorType.MARGIN,
+							},
+							alignment: {
+								x: HorizontalPositionAlign.CENTER,
+								y: VerticalPositionAlign.TOP,
+							},
+						},
+                        border: {
+							top: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							bottom: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							left: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							right: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+						},
+                        children: [
+                            new TextRun({
+                                text: "Item NO. (a)",
+                                allCaps: true,
+                                size: 10,
+                            }),
+                        ]
+                    }),
                     //Item Header Row Cell - Federal Stock Number, Description, and Coding of Material and/or Services (b)
-                    
+                    new Paragraph({
+						alignment: AlignmentType.CENTER,
+						frame: {
+							position: {
+								x: 405,
+								y: 4110,
+							},
+							width: 7200,
+							height: 500,
+							anchor: {
+								horizontal: FrameAnchorType.MARGIN,
+								vertical: FrameAnchorType.MARGIN,
+							},
+							alignment: {
+								x: HorizontalPositionAlign.CENTER,
+								y: VerticalPositionAlign.TOP,
+							},
+						},
+                        border: {
+							top: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							bottom: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							left: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							right: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+						},
+                        children: [
+                            new TextRun({
+                                text: "Federal Stock Number, Description, and Coding of Material and/or Services (b)",
+                                allCaps: true,
+                                size: 10,
+                            }),
+                        ]
+                    }),
                     //Item Header Row Cell - Unit of Issue (c)
-
+					new Paragraph({
+						alignment: AlignmentType.CENTER,
+						frame: {
+							position: {
+								x: 7705,
+								y: 4110,
+							},
+							width: 450,
+							height: 500,
+							anchor: {
+								horizontal: FrameAnchorType.MARGIN,
+								vertical: FrameAnchorType.MARGIN,
+							},
+							alignment: {
+								x: HorizontalPositionAlign.CENTER,
+								y: VerticalPositionAlign.TOP,
+							},
+						},
+                        border: {
+							top: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							bottom: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							left: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							right: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+						},
+                        children: [
+                            new TextRun({
+                                text: "Unit of Issue (c)",
+                                allCaps: true,
+                                size: 10,
+                            }),
+                        ]
+                    }),
                     //Item Header Row Cell - Quantity Requested (d)
-
+					new Paragraph({
+						alignment: AlignmentType.CENTER,
+						frame: {
+							position: {
+								x: 8255,
+								y: 4110,
+							},
+							width: 705,
+							height: 500,
+							anchor: {
+								horizontal: FrameAnchorType.MARGIN,
+								vertical: FrameAnchorType.MARGIN,
+							},
+							alignment: {
+								x: HorizontalPositionAlign.CENTER,
+								y: VerticalPositionAlign.TOP,
+							},
+						},
+                        border: {
+							top: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							bottom: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							left: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							right: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+						},
+                        children: [
+                            new TextRun({
+                                text: "Quantity Requested (d)",
+                                allCaps: true,
+                                size: 10,
+                            }),
+                        ]
+                    }),
                     //Item Header Row Cell - Supply Action (e)
-
+					new Paragraph({
+						alignment: AlignmentType.CENTER,
+						frame: {
+							position: {
+								x: 9065,
+								y: 4110,
+							},
+							width: 750,
+							height: 500,
+							anchor: {
+								horizontal: FrameAnchorType.MARGIN,
+								vertical: FrameAnchorType.MARGIN,
+							},
+							alignment: {
+								x: HorizontalPositionAlign.CENTER,
+								y: VerticalPositionAlign.TOP,
+							},
+						},
+                        border: {
+							top: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							bottom: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							left: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							right: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+						},
+                        children: [
+                            new TextRun({
+                                text: "Supply Action (e)",
+                                allCaps: true,
+                                size: 10,
+                            }),
+                        ]
+                    }),
                     //Item Header Row Cell - Type Container (f)
-
+					new Paragraph({
+						alignment: AlignmentType.CENTER,
+						frame: {
+							position: {
+								x: 9920,
+								y: 4110,
+							},
+							width: 800,
+							height: 500,
+							anchor: {
+								horizontal: FrameAnchorType.MARGIN,
+								vertical: FrameAnchorType.MARGIN,
+							},
+							alignment: {
+								x: HorizontalPositionAlign.CENTER,
+								y: VerticalPositionAlign.TOP,
+							},
+						},
+                        border: {
+							top: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							bottom: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							left: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							right: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+						},
+                        children: [
+                            new TextRun({
+                                text: "Type Container (f)",
+                                allCaps: true,
+                                size: 10,
+                            }),
+                        ]
+                    }),
                     //Item Header Row Cell - Container Nos. (g)
-
+					new Paragraph({
+						alignment: AlignmentType.CENTER,
+						frame: {
+							position: {
+								x: 10820,
+								y: 4110,
+							},
+							width: 800,
+							height: 500,
+							anchor: {
+								horizontal: FrameAnchorType.MARGIN,
+								vertical: FrameAnchorType.MARGIN,
+							},
+							alignment: {
+								x: HorizontalPositionAlign.CENTER,
+								y: VerticalPositionAlign.TOP,
+							},
+						},
+                        border: {
+							top: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							bottom: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							left: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							right: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+						},
+                        children: [
+                            new TextRun({
+                                text: "Container Nos. (g)",
+                                allCaps: true,
+                                size: 10,
+                            }),
+                        ]
+                    }),
                     //Item Header Row Cell - Unit Price (h)
-
+					new Paragraph({
+						alignment: AlignmentType.CENTER,
+						frame: {
+							position: {
+								x: 11715,
+								y: 4110,
+							},
+							width: 1000,
+							height: 500,
+							anchor: {
+								horizontal: FrameAnchorType.MARGIN,
+								vertical: FrameAnchorType.MARGIN,
+							},
+							alignment: {
+								x: HorizontalPositionAlign.CENTER,
+								y: VerticalPositionAlign.TOP,
+							},
+						},
+                        border: {
+							top: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							bottom: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							left: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							right: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+						},
+                        children: [
+                            new TextRun({
+                                text: "Unit Price (h)",
+                                allCaps: true,
+                                size: 10,
+                            }),
+                        ]
+                    }),
                     //Item Header Row Cell - Total Cost (i)
-
+					new Paragraph({
+						alignment: AlignmentType.CENTER,
+						frame: {
+							position: {
+								x: 12810,
+								y: 4110,
+							},
+							width: 1000,
+							height: 500,
+							anchor: {
+								horizontal: FrameAnchorType.MARGIN,
+								vertical: FrameAnchorType.MARGIN,
+							},
+							alignment: {
+								x: HorizontalPositionAlign.CENTER,
+								y: VerticalPositionAlign.TOP,
+							},
+						},
+                        border: {
+							top: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							bottom: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							left: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+							right: {
+								color: "auto",
+								space: 1,
+								value: "single",
+								size: 6,
+							},
+						},
+                        children: [
+                            new TextRun({
+                                text: "Total Cost (i)",
+                                allCaps: true,
+                                size: 10,
+                            }),
+                        ]
+                    }),
                     //Item Data Cell - Numbered Item
 
                     //Item Data Cell - Federal Stock Number, Description, and Coding of Material and/or Services
